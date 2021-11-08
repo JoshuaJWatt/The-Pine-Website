@@ -16,5 +16,5 @@ $message=$_POST['message'];
 $query="insert into contacts(first_name, last_name, phone, email, subject, message)
 values('$first_name', '$last_name', '$phone', '$email', '$subject', '$message')";
 mysqli_query($con,$query);
-header("location:contacts.php");
+header("location:contact.php");
 ?>
